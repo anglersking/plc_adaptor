@@ -50,7 +50,7 @@ def get_json(request):
         print("send->",dict_datas.get('value'),"convert_tcp")
         tcp_manager.tcp_send(dict_datas.get('value'))
         print("tcp_convert and send ok...,")
-    if (dict_datas.get('cmd') == "send"):
+    if (dict_datas.get('cmd') == "recive"):
         print('I have recive ',tcp_manager.resive())
 
 
